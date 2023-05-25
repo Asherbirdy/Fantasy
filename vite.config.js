@@ -21,9 +21,17 @@ export default defineConfig({
       deep: true, //搜尋子目錄
     }),
   ],
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/assets/scss/variables.scss";`,
+      },
     },
   },
 });

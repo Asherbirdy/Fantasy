@@ -18,3 +18,13 @@ defineProps({
   </div>
 </template>
 
+<style scoped lang="scss">
+.greetings{
+h1{
+  font-size: $testSize;
+}
+
+}
+
+</style>
+
